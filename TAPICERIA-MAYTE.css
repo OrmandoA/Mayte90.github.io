@@ -1,0 +1,967 @@
+
+
+body {
+	background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	margin: 0;
+
+}
+.CONTENEDOR {
+	height: 100vh;
+	width: 100%;
+
+
+}
+
+/*TITULO TAPICERIA MAYTE*/
+.titulo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-10px);
+	transform: translateX(12px);
+	filter: contrast(1);
+}
+
+.titulo {
+	align-content: center;
+	text-shadow: 3px 1px 3px #f596f7;
+	border-radius: 20px;
+	animation: brillo 1s alternate-reverse; infinite;
+	letter-spacing: 2px;
+	background: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+
+
+.titulo:first-child {
+	animation: brillo 2s running infinite;
+	text-shadow: 4px 2px 5px #fc00ff;
+	filter: blur(0.5px);
+	filter: contrast(100%);
+
+
+
+
+}
+
+
+
+@keyframes brillo {
+	0%,100% {
+		transform: translate(-3px);
+		text-shadow: 4px 3px 5px #ff7ae8;
+		background: linear-gradient(90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.80;
+		transition: opacity 3s;
+
+	}
+
+	20%,40% {
+		transform: translate(3px);
+		text-shadow: 3px 4px 6px #db2c95;
+		background: linear-gradient(-90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.50;
+		transition: opacity 3s;
+
+	}
+
+	80%,100% {
+		transform: translate(-3px);
+		text-shadow: 5px 3px 4px #a52678;
+		background: linear-gradient(90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.80;
+		transition: opacity 3s;
+	}
+}
+
+/* AQUI TERMINA EL TITULO*/
+
+/*PRIMERAS IMAGENES INICIO CON EFECTO CARRUSEL*/
+.carrosel {
+    -webkit-perspective: 250px;
+    -moz-perspective: 250px;
+    width: 400px;
+    height: 200px;
+    top: 50px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+@-webkit-keyframes animation {
+    from {
+        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1;
+        background-image: url(imagen10.jpg);
+
+
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1;
+        background-image: url(imagen10.jpg);
+    }
+}
+
+@-moz-keyframes animation {
+    from {
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1;
+        background-image: url(imagen10.jpg);
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+.caixa__card h2 {
+	position: absolute;
+	top: -80px;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 200px;
+
+}
+.caixa__card {
+	padding: 5px;
+    width: 90px;
+    height: 100px;
+    background-color: #442222;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    left: 145px;
+    font-size: 9px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    text-align: center;
+    -webkit-animation-name: animation;
+    -moz-animation-name: animation;
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.caixa__card:hover {
+    border: solid #4466cc 3px;
+    box-shadow: 0px 0px 10px #4466cc;
+}
+
+.caixa__card.cc__1 {
+    background: linear-gradient(-229deg, #0093E9, #80D0C7);
+    -webkit-animation-delay: -7s;
+    -moz-animation-delay: -7s;
+    background-size: cover;
+}
+
+.caixa__card.cc__2 {
+
+    background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+    background-size: cover;
+}
+
+.caixa__card.cc__3 {
+
+    background: linear-gradient(-229deg, #50d990, #d4d054);
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+    background-size: cover;
+}
+
+.caixa__card.cc__4 {
+    background: linear-gradient(-229deg, #cf91ff, #5782F5);
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+    background-size: cover;
+}
+
+.caixa__card.cc__5 {
+    background: linear-gradient(-229deg, #642B73, #C6426E);
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    background-size: cover;
+}
+
+.caixa__card.cc__6 {
+    background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+    background-size: cover;
+}
+
+.caixa__card.cc__7 {
+    background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    background-size: cover;
+}
+
+.caixa__card.cc__8 {
+    background: linear-gradient(-229deg, #1472ff, #A8EB12);
+    background-size: cover;
+}
+
+/*AQUI TERMINA LAS PRIMERAS IMAGENES EFECTO CARRUSEL */
+
+/* -------------------------------------------------------------------*/
+/* -------------------------------------------------------------------*/
+/* -------------------------------------------------------------------*/
+
+* {
+ 	font-family: 'Ibarra Real Nova', serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.nav__responsive-ul {
+	display: none;
+
+}
+
+.nav {
+	height: 100vh;
+	width: 100%;
+	/*background: blue;  este nav sirve para cuando presiona suba*/
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 9px;
+	color: #fff;
+}
+.nav__li:hover > a {
+	color: #bbb;
+}
+
+.nav__li:hover {
+	color: #bbb;
+	text-align: left;
+	
+}
+
+
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.nav__responsive-button-container {
+	position: absolute;
+	right: 20px;
+	left: 2px;
+	width: 100%;
+	font-size: 25px;
+	top: -240px;/* BOTON HOME */
+	background: red;
+}
+
+.fa-bars {
+	font-size: 30px;
+}
+
+.nav__responsive-button{
+	padding: 8px 20px 30px;
+	text-align: right;
+	width: 100%;
+	position: absolute;
+	left: 5px;
+	/*background: red;*/
+}
+
+
+.mensaje-intro {
+	font-size: 22px;
+
+}
+
+.imagen_tapiceria {
+	height: 200px;
+	width: 420px;
+}
+
+.mensaje-1-container {
+	position: absolute;
+	top: 520px;	
+}
+.mensaje-1 {
+	position: absolute;
+	left: 10px;
+
+}
+
+.informacion-1 {
+	font-weight: bold;
+}
+@media only screen and (max-width: 525px) {
+	.importante {
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*RESOLUCION PARA MOBILES */
+
+@media only screen and (max-width:  525px) {
+	.titulo_tapizados {
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.CONTENEDOR {
+		height: 28vh;
+		width: 100%;
+		
+
+	}
+
+	.nav__ul {
+		display: none;
+	}
+	.nav {
+		padding: 0px 0px 30px;
+		transform: translateY(10px);
+		height: 37px;
+		width: 100%;
+	}
+	.nav__responsive-ul {
+	    display: block;
+		position: absolute;
+		width: 90%;
+		margin-top: 370px;
+		padding-top: 27px;
+		height: 100px;
+		transform: translateY(-350px);
+
+		
+	
+	}
+
+
+	.nav__li-container {
+		position: relative;
+		top: -1390px;
+		height:calc(100vh - 100px); 
+		background: #9bf; /* este color es deslizador al dar click*/
+		transition: all 1s;
+		z-index: 1;
+		width: 78%;
+		padding-top: -50px;
+		margin-top: 420px; /*CAMBIA EL DESLIZADOR AL DAR CLICK  */
+		margin-left: -38px;
+		transform: translateY(-620px);
+		background: linear-gradient(-90deg, #95976d, #95978d, #95979d);
+		border-radius: 20px;
+	}
+
+	.nav__responsive-li {
+		width: 100%;
+		padding: 15px 20px;
+
+	}
+
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 10px;
+		width: 60px;
+		color: #016;
+
+	}
+
+	.nav__responsive-li a {
+		color: #016;
+		text-decoration: none;
+	}
+
+	.nav__responsive-ul:hover > .nav__li-container {
+		top: -27px;
+	}
+
+
+	.contenedor {
+		border: 0 0 10px solid;
+	}
+
+
+	/*---------------IMAGENES DE "TAPIZADOS"---------------------------*/
+
+	.imagen-ajustar-1 {
+		position: absolute;
+		top: 1280px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	.imagen-1 {
+		margin: 0;
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		margin-top: 650px;
+		background-size: cover;
+		animation: animation-img-1 7s infinite;
+	}
+	 @keyframes animation-img-1 {
+	 	0%,100% {
+	 		background-image: url(imagen1.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 35% {
+	 		background-image: url(imagen2.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen3.jpg);
+	 		background-position: right;
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen4.jpg);
+	 		background-position: left;
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+	 }
+
+
+	.imagen-ajustar-2 {
+	 	position: absolute;
+		top: 2080px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+ 	}
+
+	.imagen-2 {
+	 	margin: 0;
+	 	height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-2 7s infinite;
+	}
+
+	@keyframes animation-img-2 {
+		0%,100% {
+	 		background-image: url(imagen5.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 35% {
+	 		background-image: url(imagen6.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen8.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen9.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+	}
+	.imagen-ajustar-3 {
+		position: absolute;
+		top: 2580px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.imagen-3 {
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-3 7s infinite;
+	}
+
+	@keyframes animation-img-3 {
+		0%,100% {
+	 		background-image: url(imagen11.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 40% {
+	 		background-image: url(imagen14.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen12.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen7.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-4 {
+		position: absolute;
+		top: 3100px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-4 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-4 7s infinite;
+	}
+
+	@keyframes animation-img-4 {
+		0%,100% {
+	 		background-image: url(imagen16.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 40% {
+	 		background-image: url(imagen17.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen18.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen19.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-5 {
+		position: absolute;
+		top: 3600px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-5 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-5 7s infinite;
+
+	}
+
+	@keyframes animation-img-5 {
+		0%,100% {
+	 		background-image: url(imagen29.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 40% {
+	 		background-image: url(imagen20.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen22.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen23.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-6 {
+		position: absolute;
+		top: 4100px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-6 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-6 5s infinite;
+
+	}
+
+	@keyframes animation-img-6 {
+		0%,100% {
+	 		background-image: url(imagen21.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+	}
+	.imagen-ajustar-7 {
+		position: absolute;
+		top: 4600px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-7 {
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-7 5s infinite;
+
+	}
+
+	@keyframes animation-img-7 {
+		0% {
+			background-image: url(imagen31.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+		25% {
+			background-image: url(imagen33.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+
+		50% {
+			background-image: url(imagen34.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+		70% {
+			background-image: url(imagen37.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+		100% {
+			background-image: url(imagen38.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+	}
+
+
+	 /*---------------------MENSAJES DE "TAPIZADOS"--------------*/
+	 /*---------------------RESOLUCION MOVIL--------------*/
+	 @media only screen and (max-width: 1138px) {
+		.mensaje-img-1 {
+		position: absolute;
+		top: 1810px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+	}
+	
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-2 {
+			position: absolute;
+			top: 2290px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-3 {
+			position: absolute;
+			top: 2790px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px)  {
+		.mensaje-img-4 {
+			position: absolute;
+			top: 3300px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-5 {
+			position: absolute;
+			top: 3800px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-6 {
+			position: absolute;
+			top: 4305px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-7 {
+			position: absolute;
+			top: 4790px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+  	/*-------------------------------------------------------------*/
+  	/*-------------------------------------------------------------*/
+  	/*-------------------------------------------------------------*/
+	/*ANIMACION DE CARROSEL, RESOLUCION PARA MOVIL*/
+
+	.carrosel {
+		-webkit-perspective: 250px;
+		-moz-perspective: 250px;
+		width: 350px;
+		height: 200px;
+		top: 50px;
+		position: relative;
+		margin: 0 auto;
+
+	}
+
+	@-webkit-keyframes animation {
+	    from {
+	        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+	        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+	        z-index: 10;
+	        opacity: 1
+	    }
+
+	    50% {
+	        z-index: -10;
+	    }
+
+	    to {
+	        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+	        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+	        z-index: 10;
+	        opacity: 1
+	    }
+	}
+
+	@-moz-keyframes animation {
+	    from {
+	        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+	        z-index: 10;
+	        opacity: 1
+	    }
+
+	    50% {
+	        z-index: -10;
+	    }
+
+	    to {
+	        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+	        z-index: 10;
+	        opacity: 1
+	    }
+	}
+
+	/*.caixa__card {
+	    width: 90px;
+	    height: 100px;
+	    background-color: #442222;
+	    position: absolute;
+	    display: flex;
+	    font-weight: bold;
+	    justify-content: center;
+	    align-items: center;
+	    top: 35px;
+	    left: 125px;
+	    font-size: 9px;
+	    border-radius: 8px;
+	    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	    text-align: center;
+	    -webkit-animation-name: animation;
+	    -moz-animation-name: animation;
+	    -webkit-animation-duration: 8s;
+	    -moz-animation-duration: 8s;
+	    -webkit-animation-iteration-count: infinite;
+	    -moz-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	    -moz-animation-timing-function: linear;
+	} */
+
+	/*.caixa__card:hover {
+	    border: solid #4466cc 3px;
+	    box-shadow: 0px 0px 10px #4466cc;
+	} */
+
+
+	.carrosel-1 {
+	-webkit-perspective: 400px;
+	-moz-perspective: 250px;
+	width: 350px;
+	height: 250px;
+	top: 50px;
+	position: relative;
+	margin: 0 auto;
+	
+
+	}
+
+	.caixa__card.cc__1 {
+	    -webkit-animation-delay: -7s;
+	    -moz-animation-delay: -7s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__2 {
+	    -webkit-animation-delay: -6s;
+	    -moz-animation-delay: -6s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__3 {
+	    -webkit-animation-delay: -5s;
+	    -moz-animation-delay: -5s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__4 {
+	    -webkit-animation-delay: -4s;
+	    -moz-animation-delay: -4s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__5 {
+	    -webkit-animation-delay: -3s;
+	    -moz-animation-delay: -3s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__6 {
+	    -webkit-animation-delay: -2s;
+	    -moz-animation-delay: -2s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__7 {
+	    -webkit-animation-delay: -1s;
+	    -moz-animation-delay: -1s;
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+	.caixa__card.cc__8 {
+	    background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	}
+
+
+
+
+
+
+
+
+
+
+	
+
+}
